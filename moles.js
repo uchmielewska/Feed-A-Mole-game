@@ -1,4 +1,5 @@
 let score = 0;
+const MAX_SCORE = 10;
 
 //status lasts for 1s
 function getSadHappyInterval() {
@@ -138,8 +139,11 @@ function feed(event) {
     }
     mole.node.children[0].classList.remove("hungry");
 
-    if (score >= 10)
+    document.querySelector('.worm-container').style.width = `${(score / MAX_SCORE) * 100}%`;
+
+    if (score >= MAX_SCORE)
         win();
+
 }
 
 function win() {
