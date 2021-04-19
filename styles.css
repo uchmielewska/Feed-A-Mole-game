@@ -51,3 +51,19 @@ body {
 .gone {
     display: none;
 }
+
+.hide {
+    display: none;
+}
+
+.worm {
+    width: 1660px;
+}
+
+.worm-container {
+    overflow: hidden;
+}
+
+.worm-box {
+    width: 1660px;
+}
